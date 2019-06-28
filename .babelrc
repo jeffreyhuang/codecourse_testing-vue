@@ -1,0 +1,25 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "@vue/app"
+      ]
+    },
+    "production": {
+      "presets": [
+        "@vue/app"
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          { "targets": { "node": "current" } }
+        ]
+      ],
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}
