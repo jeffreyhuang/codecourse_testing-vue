@@ -5,6 +5,6 @@ describe('test', () => {
   it('works', () => {
     let wrapper = mount(Component)
 
-    expect(true).toBe(true)
+    expect(wrapper.html()).toContain('Hello Vue')
   })
 })
