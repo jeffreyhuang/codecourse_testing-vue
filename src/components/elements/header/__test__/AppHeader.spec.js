@@ -3,6 +3,14 @@ import AppHeader from '../AppHeader'
 
 describe('AppHeader', () => {
   it('renders out the header  text', () => {
-    let wrapper = mount(AppHeader)
+    let text = 'Home'
+
+    let wrapper = mount(AppHeader, {
+      propsData: {
+        text
+      }
+    })
+
+    expect(wrapper.html()).toContain(text)
   })
 })
